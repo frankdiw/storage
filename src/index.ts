@@ -25,6 +25,7 @@ export const LStorage = {
     keys("local", options),
   clear: () => clear("local"),
   removeItem: (key: string) => removeItem(key, "local"),
+  supported: canUseStorage("local"),
 };
 
 export const SStorage = {
@@ -44,4 +45,5 @@ export const SStorage = {
     keys("session", options),
   clear: () => clear("session"),
   removeItem: (key: string) => removeItem(key, "session"),
+  supported: canUseStorage('session')
 };

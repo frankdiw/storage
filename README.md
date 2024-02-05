@@ -1,0 +1,1 @@
+这是一个localStorage和sessionStorage的封装，增加了有效期支持，并对不支持的浏览器做了容错

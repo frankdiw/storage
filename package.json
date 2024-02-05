@@ -1,12 +1,50 @@
 {
+  "name": "@frankdiw/storage",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "import": {
+      "types": "./dist/es/index.d.mts",
+      "default": "./dist/es/index.mjs"
+    },
+    "require": {
+      "types": "./dist/cjs/index.d.ts",
+      "default": "./dist/cjs/index.js"
+    }
+  },
   "scripts": {
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "build": "bunchee"
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
     "@vitest/coverage-v8": "^1.1.0",
+    "bunchee": "^4.4.5",
     "happy-dom": "^12.10.3",
     "vitest": "^1.1.0"
-  }
+  },
+  "version": "1.0.0",
+  "description": "封装了localStorage和sessionStorage，增加了有效期支持，提供了完备的单元测试",
+  "main": "src/index.ts",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankdiw/storage.git"
+  },
+  "keywords": [
+    "storage",
+    "localStorage",
+    "sessionStorage",
+    "expire"
+  ],
+  "author": "frankdiw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frankdiw/storage/issues"
+  },
+  "homepage": "https://github.com/frankdiw/storage#readme"
 }
