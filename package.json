@@ -30,7 +30,6 @@
   },
   "version": "1.0.0",
   "description": "封装了localStorage和sessionStorage，增加了有效期支持，提供了完备的单元测试",
-  "main": "src/index.ts",
   "directories": {
     "test": "test"
   },
